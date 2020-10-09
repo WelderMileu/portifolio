@@ -1,0 +1,42 @@
+[
+    {
+        "image" : "./../assets/certificate/html.jfif",
+        "description" : "HTML"
+    },
+    {
+        "image" : "./../assets/certificate/php.jfif",
+        "description" : "Bootstrap"
+    },
+    {
+        "image" : "./../assets/certificate/mysql.jfif",
+        "description" : "Mysql"
+    },
+    {
+        "image" : "./../assets/certificate/bootstrap.jpg",
+        "description" : "Bootstrap"
+    },
+    {
+        "image" : "./../assets/certificate/git.jpg",
+        "description" : "Git"
+    },
+    {
+        "image" : "./../assets/certificate/javascript.jpg",
+        "description" : "Javascript"
+    },
+    {
+        "image" : "./../assets/certificate/logica.jpg",
+        "description" : "Logica de Programação"
+    },
+    {
+        "image" : "./../assets/certificate/node.jpg",
+        "description" : "Node JS"
+    },
+    {
+        "image" : "./../assets/certificate/scrum.jpg",
+        "description" : "Scrum"
+    },
+    {
+        "image" : "./../assets/certificate/reactjs.jpg",
+        "description" : "React js"
+    }
+]
