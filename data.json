@@ -1,0 +1,42 @@
+[
+    {
+        "image" : "html.jfif",
+        "description" : "HTML"
+    },
+    {
+        "image" : "php.jfif",
+        "description" : "PHP"
+    },
+    {
+        "image" : "mysql.jfif",
+        "description" : "Mysql"
+    },
+    {
+        "image" : "bootstrap.jpg",
+        "description" : "Bootstrap"
+    },
+    {
+        "image" : "git.jpg",
+        "description" : "Git"
+    },
+    {
+        "image" : "javascript.jpg",
+        "description" : "Javascript"
+    },
+    {
+        "image" : "logica.jpg",
+        "description" : "Logica de Programação"
+    },
+    {
+        "image" : "node.jpg",
+        "description" : "Node JS"
+    },
+    {
+        "image" : "scrum.jpg",
+        "description" : "Scrum"
+    },
+    {
+        "image" : "reactjs.jpg",
+        "description" : "React js"
+    }
+]
