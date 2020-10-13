@@ -1,42 +1,46 @@
 [
     {
-        "image" : "html.jfif",
-        "description" : "HTML"
+        "image": "html.jfif",
+        "description": "HTML"
     },
     {
-        "image" : "php.jfif",
-        "description" : "PHP"
+        "image": "php.jfif",
+        "description": "PHP"
     },
     {
-        "image" : "mysql.jfif",
-        "description" : "Mysql"
+        "image": "mysql.jfif",
+        "description": "Mysql"
     },
     {
-        "image" : "bootstrap.jpg",
-        "description" : "Bootstrap"
+        "image": "node.jpg",
+        "description": "Node JS"
     },
     {
-        "image" : "git.jpg",
-        "description" : "Git"
+        "image": "cloud.jpg",
+        "description": "Node JS"
     },
     {
-        "image" : "javascript.jpg",
-        "description" : "Javascript"
+        "image": "bootstrap.jpg",
+        "description": "Bootstrap"
     },
     {
-        "image" : "logica.jpg",
-        "description" : "Logica de Programação"
+        "image": "git.jpg",
+        "description": "Git"
     },
     {
-        "image" : "node.jpg",
-        "description" : "Node JS"
+        "image": "javascript.jpg",
+        "description": "Javascript"
     },
     {
-        "image" : "scrum.jpg",
-        "description" : "Scrum"
+        "image": "logica.jpg",
+        "description": "Logica de Programação"
     },
     {
-        "image" : "reactjs.jpg",
-        "description" : "React js"
+        "image": "scrum.jpg",
+        "description": "Scrum"
+    },
+    {
+        "image": "reactjs.jpg",
+        "description": "React js"
     }
 ]
