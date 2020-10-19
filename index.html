@@ -13,7 +13,12 @@
 </head>
 
 <style>
-    .cards {
+    .banner {
+        background-image: url("./dist/images/banner-image.png");
+        background-size: cover;
+    }
+
+    .card {
         background-image: url("./dist/images/bg-card.jpeg");
         background-size: cover;
         background-attachment: fixed;
@@ -22,10 +27,10 @@
 </style>
 
 <body>
-    <nav class="fixed bg-white w-full h-50 border-b border-orange-gray-700 shadow z-20">
-        <div class="text-sm sm:text-lg w-full bg-gray-900 py-5 px-5 font-normal text-white text-sm justify-between flex flex-row sm:flex-row items-center">
+    <nav class="fixado absolute w-full h-50 z-20 transition duration-500">
+        <div class="contato text-sm sm:text-lg w-full py-5 px-5 font-semibold text-white text-sm justify-between flex flex-row sm:flex-row items-center">
             <img class="w-12" src="./dist/images/logo.png" alt="">
-            <div class="flex flex-col sm:flex-row items-start">
+            <!-- <div class="flex flex-col sm:flex-row items-start">
                 <div class="mx-10">
                     <div class="flex justify-center items-center">
                         <i class="fa fa-whatsapp mr-3"></i>
@@ -39,31 +44,27 @@
                         <p>welderfelix21@gmail.com</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <div class="flex px-10 pt-0 sm:pt-2 justify-end items-center">
+            	<div class="text-4xl text-white">
+                	<i class="fa fa-bars"></i>
+            	</div>
+        	</div>
         </div>
 
-        <div class="flex px-10 pt-0 sm:pt-2 justify-end items-center">
-            <div class="text-4xl text-gray-600">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
+        
     </nav>
 
-    <section class="pt-48">
-        <div class="mt-48 sm:mt-20 h-64 relative flex justify-center items-center">
-            <div class="w-3/6 sm:w-3/6 flex flex-col justify-center items-start">
-                <h1 class="mt-36 sm:mt-0 text-3xl sm:text-6xl text-gray-700 font-bold">Desenvolvimento de  WebSite Profissional</h1>
-                <p class="mt-10 text-gray-600 text-2xl w-6/6 sm:w-5/6">
+    <section class="pt-10 banner">
+        <div class="mt-48 sm:mt-20 pt-0 pb-64 h-auto relative flex justify-center items-center">
+            <div class="w-3/6 sm:w-4/6 flex flex-col justify-center items-start">
+                <h1 class="mt-36 sm:mt-0 text-3xl sm:text-5xl text-white font-bold">Desenvolvimento de  WebSite</h1>
+                <p class="mt-10 text-white text-2xl pb-20 w-6/6 sm:w-4/6 pb-48">
                     Desenvolvemos o melhor website da região,
                     em custo beneficio para qualquer tipo de instituição,
-                    <span class="bg-yellow-300">usando as melhores tecnologias do mercado.</span>
+                    <span class="bg-blue-300 px-1">usando as melhores tecnologias do mercado.</span>
                 </p>
             </div>
-            <img
-                class="z-0 sm:z-10 absolute inset-y-0 right-0 mt-64 sm:mt-40 pt-48 sm:pt-0"             
-                src="./dist/images/img-banner.png" 
-                alt="">
-            <!-- <img class="hidden sm:block mt-32 right-0 absolute" src="assets/image-header.svg" alt=""> -->
         
             <div class="z-20 ml-5 sm:ml-10 top-0 left-0 mt-56 pt-0 sm:pt-20 fixed flex flex-col justify-center items-center">
                 <div class="p-1 text-white text-2xl sm:text-4xl shadow-lg bg-blue-700 w-12 sm:w-16 h-12 sm:h-16 flex justify-center items-center rounded-full">
@@ -76,7 +77,7 @@
         </div>
     </section>
     
-    <main class="flex justify-center items-center mt-64 sm:mt-0 pt-56 sm:pt-56">
+    <main class="flex justify-center items-center">
         <div class="w-5/6 sm:w-3/6 flex flex-col justify-center items-center my-20">
             <img class="rounded-full p-1 border-4 border-gray-500" width="130" src="https://thispersondoesnotexist.com/image" alt="avatar">
             <h2 class="text-gray-700 font-bold my-10 text-2xl text-center">CEO e Fundador da Empresa X</h2>
@@ -88,7 +89,7 @@
         </div>
     </main>
 
-    <section class="cards my-32 flex flex-col sm:flex-row justify-around bg-gray-300 px-10 py-24 border-b-4 border-t-4 border-gray-400">
+    <section class="card my-32 flex flex-col sm:flex-row justify-around bg-gray-900 px-10 py-24">
         <div class="p-10 flex flex-col justify-center items-center bg-white opacity-75">
             <div class="text-6xl">
                 <i class="fa fa-certificate text-blue-900"></i>
@@ -101,11 +102,10 @@
 
         <div class="p-10 flex flex-col justify-center items-center bg-white opacity-75">
             <div class="text-6xl">
-                <i class="fa fa-dollar text-blue-900"></i>
+                <i class="fa fa-calendar text-blue-900"></i>
             </div>
             <p class="text-gray-600 mt-10 text-lg text-center font-semibold">
-                Oferecemos os melhores softwares com perços em
-                custo beneficio.
+                Estou no mercado de desenvolvimento de software há cerca de 3 anos.
             </p>
         </div>
 
@@ -114,8 +114,7 @@
                 <i class="fa fa-handshake-o text-blue-900"></i>
             </div>
             <p class="text-gray-600 mt-10 text-lg text-center font-semibold">
-                Temos as melhores opções para fechar-mos um bom negocio
-                sem burocracia.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, harum enim recusandae.
             </p>
         </div>
     </section>
@@ -128,7 +127,7 @@
         <div class="w-full flex flex-wrap justify-center items-center">
             <div class="sm:w-2/6 m-5 flex flex-col justify-center items-center">
                 <img width="500" height="500" src="./dist/images/influencer.png" alt="">
-                <p class="text-gray-700 text-lg text-center p-3">
+                <p class="text-gray-700 text-lg text-center p-3 h-20">
                     Clone e otimização do site influencer studio,
                     site original<br>
                     <a href="https://cursoinfluencerstudio.bumesite.com" target="_blank" class="text-sm sm:text-lg">
@@ -139,7 +138,7 @@
 
             <div class="sm:w-2/6 mt-20 sm:mt-5 m-5 flex flex-col justify-center items-center">
                 <img width="500" src="https://github.com/WelderMileu/blog-html/raw/master/assets/imagem.png" alt="">
-                <p class="text-gray-700 text-lg text-center p-3">
+                <p class="text-gray-700 text-lg text-center p-3 h-20">
                     Site estilo blog
                 </p>
                 <a href="https://weldermileu.github.io/blog-html/index.html" target="_blank" class="mt-10 font-semibold p-3 border border-gray-900 text-gray-900 w-full text-center rounded">Visualizar site</a>
@@ -150,5 +149,22 @@
     </main>
     <a href="certificados.html">certicate</a>
 </body>
+<script>
+	function navigation() {
+		const content = document.querySelector('.fixado');
+		const contato = document.querySelector('.contato');
+		
+		const position = window.scrollY;
 
+		if(position > 5) {
+			content.classList.remove('absolute')
+			content.classList.add('bg-gray-800', 'fixed', 'shadow-lg')
+		} else {
+			content.classList.add('absolute')
+			content.classList.remove('bg-gray-800', 'fixed', 'shadow-lg')
+		}
+	}
+
+	window.addEventListener('scroll', navigation)
+</script>
 </html>
