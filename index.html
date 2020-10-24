@@ -42,7 +42,6 @@
 <body>
     <nav class="fixado absolute w-full h-50 z-20 transition duration-500">
         <div class="text-sm sm:text-lg w-full py-5 px-5 font-semibold text-white text-sm justify-between flex flex-row sm:flex-row items-center">
-            <!-- <img class="w-12" src="./dist/images/logo.png" alt=""> -->
     
             <div class="flex px-10 pt-0 sm:pt-2 justify-end items-center">
             	<div class="icon-nav text-4xl text-white">
@@ -51,8 +50,19 @@
         	</div>
         </div>
 
-        
     </nav>
+
+    <div class="drawer transition duration-500 z-50 fixed top-0 w-5 overflow-hidden hidden h-screen bg-black flex justify-center items-center">
+        <div class="close w-full flex justify-end p-10 absolute top-0 text-white text-4xl">
+            <i class="fa fa-close"></i>
+        </div>
+        <ul class="text-center">
+            <li class="py-2 text-white font-semibold text-2xl uppercase"><a href="#">Home</a></li>
+            <li class="py-2 text-white font-semibold text-2xl uppercase"><a href="#">Hard Skills</a></li>
+            <li class="py-2 text-white font-semibold text-2xl uppercase"><a href="#">Portifolio</a></li>
+            <li class="py-2 text-white font-semibold text-2xl uppercase"><a href="certificados.html">Certificados</a></li>
+        </ul>
+    </div>
 
     <section class="pt-10 banner">
         <div class="mt-10 sm:mt-10 pt-0 pb-64 h-auto relative flex justify-center items-center">
@@ -127,7 +137,7 @@
             <div class="sm:w-2/6 m-3 flex flex-col justify-center items-center mt-10
             border border-gray-400 p-2 rounded">
                 <h1 class="w-full bg-gray-200 p-3 text-center font-semibold text-2xl mb-3 uppercase text-gray-700 rounded">Card ecommerce</h1>
-                <img class="rounded shadow-lg mb-3 z-10" width="500" height="500" src="https://github.com/WelderMileu/animacao_com_jquery/raw/master/template.png" alt="">
+                <img class="rounded mb-3 z-10" width="500" height="500" src="https://github.com/WelderMileu/animacao_com_jquery/raw/master/template.png" alt="">
                 <div class="p-2 rounded flex flex-col">
                     <p class="text-gray-700 text-lg text-left p-5 h-20">
                         Animação usando a biblioteca jquery e estilizada com tailwindcss.
@@ -140,7 +150,7 @@
             <div class="sm:w-2/6 m-3 flex flex-col justify-center items-center mt-10
             border border-gray-400 p-2 rounded">
                 <h1 class="w-full bg-gray-200 p-3 text-center font-semibold text-2xl mb-3 uppercase text-gray-700 rounded">Influencer Studio - Clone</h1>
-                <img class="rounded shadow-lg mb-3 z-10" width="500" height="500" src="./dist/images/influencer.png" alt="">
+                <img class="rounded mb-3 z-10" width="500" height="500" src="./dist/images/influencer.png" alt="">
                 <div class="p-2 rounded flex flex-col">
                     <p class="text-gray-700 text-lg text-left p-5 h-20">
                         Clone e otimização do site influencer studio,
@@ -157,7 +167,7 @@
             <div class="sm:w-2/6 m-3 flex flex-col justify-center items-center mt-10
             border border-gray-400 p-2 rounded">
                 <h1 class="w-full bg-gray-200 p-3 text-center font-semibold text-2xl mb-3 uppercase text-gray-700 rounded">Blog Midia kit</h1>
-                <img class="rounded shadow-lg mb-3 z-10" width="500" height="500" src="https://github.com/WelderMileu/blog-html/raw/master/assets/imagem.png" alt="">
+                <img class="rounded mb-3 z-10" width="500" height="500" src="https://github.com/WelderMileu/blog-html/raw/master/assets/imagem.png" alt="">
                 <div class="p-2 rounded flex flex-col">
                     <p class="text-gray-700 text-lg text-left p-5 h-20">
                         Site de midia kit para duvulgação de trabalho em redes de midia é sociais.
@@ -171,7 +181,7 @@
             <div class="sm:w-2/6 m-3 flex flex-col justify-center items-center mt-10
             border border-gray-400 p-2 rounded">
                 <h1 class="w-full bg-gray-200 p-3 text-center font-semibold text-2xl mb-3 uppercase text-gray-700 rounded">Aplicativo - ios android</h1>
-                <img class="rounded shadow-lg mb-3 z-10" width="200" src="https://github.com/WelderMileu/app_de_musica_react-native/raw/master/assets/video.gif" alt="">
+                <img class="rounded mb-3 z-10" width="200" src="https://github.com/WelderMileu/app_de_musica_react-native/raw/master/assets/video.gif" alt="">
                 <div class="p-2 rounded flex flex-col">
                     <p class="text-gray-700 text-lg text-left p-5 h-20">
                         Aplicativo de musica de forma statica desenvolvido com React Native.
@@ -182,28 +192,6 @@
             </div>
         </div>
     </main>
-    <a href="certificados.html">certicate</a>
 </body>
-<script>
-	function navigation() {
-		const content = document.querySelector('.fixado');
-		const iconsNav = document.querySelector('.icon-nav');
-		
-		const position = window.scrollY;
-
-		if(position > 400) {
-			content.classList.remove('absolute')
-			content.classList.add('bg-white', 'fixed', 'shadow-lg')
-
-            iconsNav.classList.add('text-gray-500')            
-		} else {
-			content.classList.add('absolute')
-			content.classList.remove('bg-white', 'fixed', 'shadow-lg')
-		  
-            iconsNav.classList.remove('text-gray-500')
-        }
-	}
-
-	window.addEventListener('scroll', navigation)
-</script>
+<script src="./js/script.js"></script>
 </html>
