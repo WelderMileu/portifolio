@@ -14,6 +14,13 @@
 </head>
 
 <style>
+    :root{
+        --primary-color: #3b6064;
+        --secondary-color: #c9e4ca;
+        --tercy-color: #87bba2;
+        --quart-color: #55828b;
+        --sex-color: #364958;
+    }
     .banner {
         background-image: url("./dist/images/bg-card.jpg");
         background-attachment: fixed;
@@ -28,10 +35,35 @@
         position:absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0,0,0,.7);
+        background-color: var(--primary-color);
+        opacity: .8;
         top:0;
     }
 
+    .icon__lenguage {
+        box-shadow: 1px 1px 1px 1px var(--secondary-color),
+                    -1px -1px 1px 1px var(--secondary-color),
+                    inset -1px -1px 1px 1px var(--secondary-color),
+                    inset 1px 1px 1px 1px var(--secondary-color);
+        background:linear-gradient(var(--primary-color), var(--secondary-color));
+    }
+
+    .card__description {
+        box-shadow: 1px 1px 1px 1px var(--primary-color),
+                    -1px -1px 1px 1px var(--primary-color),
+                    inset -1px -1px 1px 1px var(--primary-color),
+                    inset 1px 1px 1px 1px var(--primary-color);
+        /* background:linear-gradient(var(--secondary-color),var(--primary-color)); */
+        color: var(--primary-color);
+    }
+
+    .card__description p {
+        color: var(--quart-color);
+    }
+
+    .nav-fluid {
+        background:linear-gradient(var(--secondary-color),var(--primary-color));
+    }
 </style>
 
 <body>
@@ -49,7 +81,7 @@
 
     <div class="drawer transition duration-500 z-50 fixed top-0 w-5 overflow-hidden hidden h-screen bg-black flex justify-center items-center">
         <div class="close w-full flex justify-end p-10 absolute top-0 text-white text-4xl">
-            <i class="fa fa-close"></i>
+            <i class="fas fa-times-circle"></i>
         </div>
         <ul class="text-center">
             <li class="py-2 text-white font-semibold text-2xl uppercase"><a href="#">Home</a></li>
@@ -68,7 +100,7 @@
                         <h2 class="text-white font-bold my-10 text-3xl sm:text-4xl text-center">
                             Desenvolvedor Web e mobile
                         </h2>
-                        <p class="text-center text-xl text-white">
+                        <p class="text-center text-xl text-white font-semibold">
                             Meu nome e Welder Mileu sou desenvolvedor fullstack,
                             um grande apaixonado por tecnologia, estou no mercado desde 2018 
                             atuando como programador web.
@@ -94,48 +126,48 @@
     </section>
 
     <section class="card my-10 flex flex-col sm:flex-row justify-around px-10 py-24">
-        <div class="p-5 flex flex-col justify-center items-center border border-gray-300 rounded-lg shadow">
+        <div class="card__description text-gray-500 p-5 flex flex-col justify-center items-center border border-gray-300 rounded-lg shadow">
             <div class="text-6xl">
-                <i class="fa fa-certificate text-gray-600"></i>
+                <i class="fa fa-certificate"></i>
             </div>
-            <p class="text-gray-500 mt-10 text-center text-lg font-semibold">
+            <p class="mt-10 text-center text-lg font-semibold">
                 Certicados de conclução 100% concluidos nas melhores
                 plataformas gratuitas de ensino.
             </p>
         </div>
 
-        <div class="p-5 flex flex-col justify-center items-center">
+        <div class="p-5 flex flex-col justify-center items-center" style="color:var(--primary-color)">
             <div class="text-6xl">
-                <i class="fa fa-calendar text-gray-600"></i>
+                <i class="fa fa-calendar"></i>
             </div>
-            <p class="text-gray-500 mt-10 text-lg text-center font-semibold">
+            <p class="mt-10 text-lg text-center font-semibold" style="color:var(--quart-color)">
                 Estou no mercado de desenvolvimento de software há cerca de 3 anos.
             </p>
         </div>
 
-        <div class="p-5 flex flex-col justify-center items-center  border border-gray-300 rounded-lg shadow">
+        <div class="card__description p-5 flex flex-col justify-center items-center  border border-gray-300 rounded-lg shadow">
             <div class="text-6xl">
-                <i class="fa fa-handshake-o text-gray-600"></i>
+                <i class="fa fa-handshake"></i>
             </div>
-            <p class="text-gray-500 mt-10 text-lg text-center font-semibold">
+            <p class="mt-10 text-lg text-center font-semibold">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, harum enim recusandae.
             </p>
         </div>
     </section>
 
-    <div class="text-gray-500 py-10 text-5xl flex justify-center items-center my-48">
+    <div class="text-white py-10 text-5xl flex justify-center items-center my-48">
         <div class="w-5/6 flex flex-wrap justify-center items-center text-center">
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-html5"></i>
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-css3"></i>
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-js"></i>
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-react"></i>
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-php"></i>
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-git"></i>
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-github"></i>
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fas fa-database"></i>
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-node"></i>
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-figma"></i>
-            <i class="w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-bootstrap"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-html5"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-css3"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-js"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-react"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-php"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-git"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-github"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fas fa-database"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-node"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-figma"></i>
+            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-bootstrap"></i>
         </div>
     </div>
 

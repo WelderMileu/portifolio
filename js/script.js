@@ -7,13 +7,11 @@ function navigation() {
     if(position > 400) {
         content.classList.remove('absolute')
         content.classList.add('bg-white', 'fixed', 'shadow-lg')
-
-        iconsNav.classList.add('text-gray-500')            
+        content.classList.add('nav-fluid')
     } else {
         content.classList.add('absolute')
-        content.classList.remove('bg-white', 'fixed', 'shadow-lg')
-      
-        iconsNav.classList.remove('text-gray-500')
+        content.classList.remove('bg-white', 'fixed', 'shadow-lg')      
+        content.classList.remove('nav-fluid')
     }
 }
 
@@ -32,7 +30,7 @@ function closeDrawer() {
 }
 
 const buttonOpen = document.querySelector('.fa-bars');
-const buttonClose = document.querySelector('.fa-close');
+const buttonClose = document.querySelector('.fa-times-circle');
 
 buttonOpen.addEventListener('click', openDrawer)
 buttonClose.addEventListener('click', closeDrawer)
