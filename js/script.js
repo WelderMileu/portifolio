@@ -1,6 +1,5 @@
 function navigation() {
     const content = document.querySelector('.fixado');
-    const iconsNav = document.querySelector('.icon-nav');
     
     const position = window.scrollY;
 
