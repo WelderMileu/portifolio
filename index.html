@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Somos uma empresa de desenvolvimento de software, software, desenvolvimento, website">
+    <meta name="description"
+        content="Somos uma empresa de desenvolvimento de software, software, desenvolvimento, website">
     <title>Portifolio</title>
     <link rel="icon" href="./dist/images/logo.png">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> -->
@@ -14,57 +15,60 @@
 </head>
 
 <style>
-    :root{
+    :root {
         --primary-color: #3b6064;
         --secondary-color: #c9e4ca;
         --tercy-color: #87bba2;
         --quart-color: #55828b;
         --sex-color: #364958;
     }
+
     .banner {
         background-image: url("./dist/images/bg-card.jpg");
         background-attachment: fixed;
         background-size: cover;
         height: 100vh;
-        position:relative;
+        position: relative;
 
     }
 
     .banner::before {
         content: '';
-        position:absolute;
+        position: absolute;
         width: 100%;
         height: 100vh;
         background-color: var(--sex-color);
         opacity: .3;
-        top:0;
+        top: 0;
     }
 
     .icon__lenguage {
         box-shadow: inset -5px -4px 4px -3px var(--secondary-color),
-                    inset 4px 4px 4px -4px var(--secondary-color);
+            inset 4px 4px 4px -4px var(--secondary-color);
         color: var(--primary-color);
     }
 
     .nav-fluid {
-        background:linear-gradient(var(--primary-color), var(--quart-color));
+        background: linear-gradient(var(--primary-color), var(--quart-color));
     }
 </style>
 
 <body>
     <nav class="fixado absolute w-full h-50 z-20 transition duration-500">
-        <div class="text-sm sm:text-lg w-full py-5 px-5 font-semibold text-white text-sm justify-between flex flex-row sm:flex-row items-center">
-    
+        <div
+            class="text-sm sm:text-lg w-full py-5 px-5 font-semibold text-white text-sm justify-between flex flex-row sm:flex-row items-center">
+
             <div class="flex px-10 pt-0 sm:pt-2 justify-end items-center">
-            	<div class="icon-nav text-4xl text-white">
-                	<i class="fa fa-bars"></i>
-            	</div>
-        	</div>
+                <div class="icon-nav text-4xl text-white">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
         </div>
 
     </nav>
 
-    <div class="drawer transition duration-500 z-50 fixed top-0 w-5 overflow-hidden hidden h-screen bg-white flex justify-center items-center border-right border-teal-500">
+    <div
+        class="drawer transition duration-500 z-50 fixed top-0 w-5 overflow-hidden hidden h-screen bg-white flex justify-center items-center border-right border-teal-500">
         <div class="close w-full flex justify-end p-10 absolute top-0 text-teal-500 text-4xl">
             <i class="fas fa-times-circle"></i>
         </div>
@@ -72,7 +76,8 @@
             <li class="py-2 text-teal-500 font-bold text-2xl uppercase"><a href="#">Home</a></li>
             <li class="py-2 text-teal-500 font-bold text-2xl uppercase"><a href="#">Hard Skills</a></li>
             <li class="py-2 text-teal-500 font-bold text-2xl uppercase"><a href="#">Portifolio</a></li>
-            <li class="py-2 text-teal-500 font-bold text-2xl uppercase"><a href="certificados.html">Certificados</a></li>
+            <li class="py-2 text-teal-500 font-bold text-2xl uppercase"><a href="certificados.html">Certificados</a>
+            </li>
         </ul>
     </div>
 
@@ -81,31 +86,37 @@
             <div class="w-6/6 sm:w-4/6 flex flex-col justify-center items-start">
                 <main class="flex justify-center items-center">
                     <div class="w-6/6 sm:w-4/6 flex flex-col justify-center items-center my-0">
-                        <img class="rounded-full p-1 border-4 border-white" width="130" src="https://thispersondoesnotexist.com/image" alt="avatar">
+                        <img class="rounded-full p-1 border-4 border-white" width="130"
+                            src="https://thispersondoesnotexist.com/image" alt="avatar">
                         <h2 class="text-white font-bold my-10 text-3xl sm:text-4xl text-center">
                             Desenvolvedor Web e Mobile
                         </h2>
                         <p class="text-center text-xl text-white font-semibold">
                             Meu nome e Welder Mileu sou desenvolvedor fullstack,
-                            um grande apaixonado por tecnologia, estou no mercado desde 2018 
+                            um grande apaixonado por tecnologia, estou no mercado desde 2018
                             atuando como programador web.
                         </p>
                     </div>
                 </main>
             </div>
-        
-            <div class="z-20 ml-5 sm:ml-10 top-0 left-0 mt-56 pt-0 sm:pt-20 fixed flex flex-col justify-center items-center">
-                <div class="p-1 text-white text-2xl sm:text-4xl shadow-lg bg-teal-700 w-12 sm:w-16 h-12 sm:h-16 flex justify-center items-center rounded-full">
+
+            <div
+                class="z-20 ml-5 sm:ml-10 top-0 left-0 mt-56 pt-0 sm:pt-20 fixed flex flex-col justify-center items-center">
+                <div
+                    class="p-1 text-white text-2xl sm:text-4xl shadow-lg bg-teal-700 w-12 sm:w-16 h-12 sm:h-16 flex justify-center items-center rounded-full">
                     <i class="fab fa-linkedin-in"></i>
                 </div>
-                <div class="bg-white mt-2 pt-1 text-2xl sm:text-4xl shadow-lg w-12 sm:w-16 h-12 sm:h-16 flex justify-center items-center rounded-full">
+                <div
+                    class="bg-white mt-2 pt-1 text-2xl sm:text-4xl shadow-lg w-12 sm:w-16 h-12 sm:h-16 flex justify-center items-center rounded-full">
                     <i class="fab fa-github"></i>
                 </div>
             </div>
         </div>
 
         <svg class="hidden sm:block absolute bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#fff" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,85.3C480,96,600,128,720,149.3C840,171,960,181,1080,186.7C1200,192,1320,192,1380,192L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            <path fill="#fff" fill-opacity="1"
+                d="M0,96L60,90.7C120,85,240,75,360,85.3C480,96,600,128,720,149.3C840,171,960,181,1080,186.7C1200,192,1320,192,1380,192L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+            </path>
         </svg>
 
     </section>
@@ -142,17 +153,28 @@
 
     <div class="py-10 text-5xl flex justify-center items-center my-48">
         <div class="w-5/6 sm:w-4/6 flex flex-wrap justify-center items-center text-center">
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-html5"></i>
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-css3"></i>
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-js"></i>
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-react"></i>
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-php"></i>
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-git"></i>
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-github"></i>
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fas fa-database"></i>
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-node"></i>
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-figma"></i>
-            <i class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-bootstrap"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-html5"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-css3"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-js"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-react"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-php"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-git"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-github"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fas fa-database"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-node"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-figma"></i>
+            <i
+                class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-bootstrap"></i>
         </div>
     </div>
 
@@ -164,12 +186,12 @@
         <div class="w-full flex flex-wrap justify-center items-center">
             <div class="sm:w-2/6 m-3 flex flex-col justify-center items-center mt-10
             p-2 rounded border-2 border-gray-300 shadow">
-                <img class="rounded mb-3 z-10" width="500" height="500" src="https://github.com/WelderMileu/animacao_com_jquery/raw/master/template.png" alt="">
+                <img class="rounded mb-3 z-10" width="500" height="500" src="https://github.com/WelderMileu/tela_login_blog/raw/master/template.png" alt="">
                 <div class="p-2 rounded flex flex-col">
                     <p class="text-gray-600 text-lg text-left p-5 h-20">
-                        Animação usando a biblioteca jquery e estilizada com tailwindcss.
+                        Tela de login feita para altenticação de usuario apenas estatica.
                     </p>
-                    <a href="https://weldermileu.github.io/animacao_com_jquery/." target="_blank" class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar site</a>    
+                    <a href="https://weldermileu.github.io/tela_login_blog/." target="_blank" class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar site</a>    
                 </div>
                 
             </div>
@@ -185,21 +207,41 @@
                             https://cursoinfluencerstudio.bumesite.com
                         </a>
                     </p>
-                    <a href="https://weldermileu.github.io/clone-influencer/index.html" target="_blank" class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar site</a>    
+                    <a href="https://weldermileu.github.io/clone-influencer/index.html" target="_blank"
+                        class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
+                        site</a>
                 </div>
-                
+
             </div>
 
             <div class="sm:w-2/6 m-3 flex flex-col justify-center items-center mt-10
             p-2 rounded border-2 border-gray-300 shadow">
-                <img class="rounded mb-3 z-10" width="500" height="500" src="https://github.com/WelderMileu/blog-html/raw/master/assets/imagem.png" alt="">
+                <img class="rounded mb-3 z-10" width="500" height="500"
+                    src="https://github.com/WelderMileu/animacao_com_jquery/raw/master/template.png" alt="">
+                <div class="p-2 rounded flex flex-col">
+                    <p class="text-gray-600 text-lg text-left p-5 h-20">
+                        Animação usando a biblioteca jquery e estilizada com tailwindcss.
+                    </p>
+                    <a href="https://weldermileu.github.io/animacao_com_jquery/." target="_blank"
+                        class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
+                        site</a>
+                </div>
+
+            </div>
+
+            <div class="sm:w-2/6 m-3 flex flex-col justify-center items-center mt-10
+            p-2 rounded border-2 border-gray-300 shadow">
+                <img class="rounded mb-3 z-10" width="500" height="500"
+                    src="https://github.com/WelderMileu/blog-html/raw/master/assets/imagem.png" alt="">
                 <div class="p-2 rounded flex flex-col">
                     <p class="text-gray-600 text-lg text-left p-5 h-20">
                         Site de midia kit para duvulgação de trabalho em redes de midia é sociais.
                     </p>
-                    <a href="https://weldermileu.github.io/blog-html/index.html" target="_blank" class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar site</a>    
+                    <a href="https://weldermileu.github.io/blog-html/index.html" target="_blank"
+                        class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
+                        site</a>
                 </div>
-                
+
             </div>
 
             <div class="sm:w-2/6 m-3 flex flex-col justify-center items-center mt-10
@@ -209,12 +251,16 @@
                     <p class="text-gray-600 text-lg text-left p-5 h-20">
                         Aplicativo de musica de forma statica desenvolvido com React Native.
                     </p>
-                    <a href="https://github.com/WelderMileu/app_de_musica_react-native/raw/master/assets/video.gif" target="_blank" class="mt-10 font-semibold p-3 border hover:border-teal-700 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar App</a>    
+                    <a href="https://github.com/WelderMileu/app_de_musica_react-native/raw/master/assets/video.gif"
+                        target="_blank"
+                        class="mt-10 font-semibold p-3 border hover:border-teal-700 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
+                        App</a>
                 </div>
-                
+
             </div>
         </div>
     </main>
 </body>
 <script src="./js/script.js"></script>
+
 </html>
