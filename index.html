@@ -15,12 +15,18 @@
 </head>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
     :root {
         --primary-color: #3b6064;
         --secondary-color: #c9e4ca;
         --tercy-color: #87bba2;
         --quart-color: #55828b;
         --sex-color: #364958;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
     }
 
     .banner {
@@ -43,14 +49,10 @@
     }
 
     .icon__lenguage {
-        box-shadow: inset -5px -4px 4px -3px var(--secondary-color),
-            inset 4px 4px 4px -4px var(--secondary-color);
-        color: var(--primary-color);
+        border: 1px solid var(--secondary-color);  
+        color: var(--secondary-color);
     }
 
-    .nav-fluid {
-        background: linear-gradient(var(--primary-color), var(--quart-color));
-    }
 </style>
 
 <body>
@@ -59,7 +61,7 @@
             class="text-sm sm:text-lg w-full py-5 px-5 font-semibold text-white text-sm justify-between flex flex-row sm:flex-row items-center">
 
             <div class="flex px-10 pt-0 sm:pt-2 justify-end items-center">
-                <div class="icon-nav text-4xl text-white">
+                <div class="icon-nav text-4xl text-white cursor-pointer">
                     <i class="fa fa-bars"></i>
                 </div>
             </div>
@@ -69,14 +71,14 @@
 
     <div
         class="drawer transition duration-500 z-50 fixed top-0 w-5 overflow-hidden hidden h-screen bg-white flex justify-center items-center border-right border-teal-500">
-        <div class="close w-full flex justify-end p-10 absolute top-0 text-teal-500 text-4xl">
+        <div class="close w-full flex justify-end p-10 absolute top-0 text-teal-900 text-4xl cursor-pointer">
             <i class="fas fa-times-circle"></i>
         </div>
         <ul class="text-center">
-            <li class="py-2 text-teal-500 font-bold text-2xl uppercase"><a href="#">Home</a></li>
-            <li class="py-2 text-teal-500 font-bold text-2xl uppercase"><a href="#">Hard Skills</a></li>
-            <li class="py-2 text-teal-500 font-bold text-2xl uppercase"><a href="#">Portifolio</a></li>
-            <li class="py-2 text-teal-500 font-bold text-2xl uppercase"><a href="certificados.html">Certificados</a>
+            <li class="py-2 text-teal-900 text-2xl uppercase"><a href="#">Home</a></li>
+            <li class="py-2 text-teal-900 text-2xl uppercase"><a href="#">Hard Skills</a></li>
+            <li class="py-2 text-teal-900 text-2xl uppercase"><a href="#">Portifolio</a></li>
+            <li class="py-2 text-teal-900 text-2xl uppercase"><a href="certificados.html">Certificados</a>
             </li>
         </ul>
     </div>
@@ -91,7 +93,7 @@
                         <h2 class="text-white font-bold my-10 text-3xl sm:text-4xl text-center">
                             Desenvolvedor Web e Mobile
                         </h2>
-                        <p class="text-center text-xl text-white font-semibold">
+                        <p class="text-center text-xl text-white">
                             Meu nome e Welder Mileu sou desenvolvedor fullstack,
                             um grande apaixonado por tecnologia, estou no mercado desde 2018
                             atuando como programador web.
@@ -122,11 +124,11 @@
     </section>
 
     <section class="card my-10 flex flex-col sm:flex-row justify-around px-10 py-24">
-        <div class="text-gray-500 p-5 flex flex-col justify-center items-center border border-teal-700 rounded shadow">
+        <div class="text-gray-500 p-5 flex flex-col justify-center items-center">
             <div class="text-6xl text-teal-900">
                 <i class="fa fa-certificate"></i>
             </div>
-            <p class="text-teal-700 mt-10 text-center text-lg font-semibold">
+            <p class="text-teal-700 mt-10 text-center text-lg">
                 Certicados de conclução 100% concluidos nas melhores
                 plataformas gratuitas de ensino.
             </p>
@@ -136,22 +138,22 @@
             <div class="text-6xl">
                 <i class="fa fa-calendar"></i>
             </div>
-            <p class="mt-10 text-lg text-center font-semibold" style="color:var(--quart-color)">
+            <p class="mt-10 text-lg text-center" style="color:var(--quart-color)">
                 Estou no mercado de desenvolvimento de software há cerca de 3 anos.
             </p>
         </div>
 
-        <div class="p-5 flex flex-col justify-center items-center  border border-teal-700 rounded shadow">
+        <div class="p-5 flex flex-col justify-center items-center">
             <div class="text-6xl text-teal-900">
                 <i class="fa fa-handshake"></i>
             </div>
-            <p class="text-teal-700 mt-10 text-lg text-center font-semibold">
+            <p class="text-teal-700 mt-10 text-lg text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, harum enim recusandae.
             </p>
         </div>
     </section>
 
-    <div class="py-10 text-5xl flex justify-center items-center my-48">
+    <div class="py-10 text-5xl flex justify-center items-center my-48 bg-teal-900">
         <div class="w-5/6 sm:w-4/6 flex flex-wrap justify-center items-center text-center">
             <i
                 class="icon__lenguage w-24 h-24 flex justify-center items-center rounded-full shadow border border-gray-500 m-2 fab fa-html5"></i>
@@ -186,14 +188,17 @@
         <div class="w-full flex flex-wrap justify-center items-center">
             <div class="sm:w-2/6 m-3 flex flex-col justify-center items-center mt-10
             p-2 rounded border-2 border-gray-300 shadow">
-                <img class="rounded mb-3 z-10" width="500" height="500" src="https://github.com/WelderMileu/tela_login_blog/raw/master/template.png" alt="">
+                <img class="rounded mb-3 z-10" width="500" height="500"
+                    src="https://github.com/WelderMileu/tela_login_blog/raw/master/template.png" alt="">
                 <div class="p-2 rounded flex flex-col">
                     <p class="text-gray-600 text-lg text-left p-5 h-20">
                         Tela de login feita para altenticação de usuario apenas estatica.
                     </p>
-                    <a href="https://weldermileu.github.io/tela_login_blog/." target="_blank" class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar site</a>    
+                    <a href="https://weldermileu.github.io/tela_login_blog/." target="_blank"
+                        class="mt-10 p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
+                        site</a>
                 </div>
-                
+
             </div>
 
             <div class="sm:w-2/6 m-3 flex flex-col justify-center items-center mt-10
@@ -208,7 +213,7 @@
                         </a>
                     </p>
                     <a href="https://weldermileu.github.io/clone-influencer/index.html" target="_blank"
-                        class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
+                        class="mt-10 p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
                         site</a>
                 </div>
 
@@ -223,7 +228,7 @@
                         Animação usando a biblioteca jquery e estilizada com tailwindcss.
                     </p>
                     <a href="https://weldermileu.github.io/animacao_com_jquery/." target="_blank"
-                        class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
+                        class="mt-10 p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
                         site</a>
                 </div>
 
@@ -238,7 +243,7 @@
                         Site de midia kit para duvulgação de trabalho em redes de midia é sociais.
                     </p>
                     <a href="https://weldermileu.github.io/blog-html/index.html" target="_blank"
-                        class="mt-10 font-semibold p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
+                        class="mt-10 p-3 border hover:border-teal-600 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
                         site</a>
                 </div>
 
@@ -253,7 +258,7 @@
                     </p>
                     <a href="https://github.com/WelderMileu/app_de_musica_react-native/raw/master/assets/video.gif"
                         target="_blank"
-                        class="mt-10 font-semibold p-3 border hover:border-teal-700 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
+                        class="mt-10 p-3 border hover:border-teal-700 text-white hover:text-teal-600 bg-teal-700 hover:bg-white w-full text-center rounded transition duration-500">Visualizar
                         App</a>
                 </div>
 
