@@ -47,7 +47,7 @@ const projetos = [
 ]
 
 
-
+// montando nossas linguagens na tela
 function writeLinguagens() {
     linguagens.map(elem => {
         const li = document.createElement('li');
@@ -58,7 +58,7 @@ function writeLinguagens() {
     })
 }
 
-
+// montando nosso projetos na tela
 function projectsItems() {
 	projetos.map(elem => {
 		// container
@@ -102,5 +102,6 @@ function projectsItems() {
 	})
 }
 
+// chamando as funções
 writeLinguagens()
 projectsItems()
