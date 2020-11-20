@@ -51,7 +51,7 @@ const projetos = [
 function writeLinguagens() {
     linguagens.map(elem => {
         const li = document.createElement('li');
-        li.classList.add("text-sm","bg-gray-800","m-2","w-32","text-white", "text-center","p-2","rounded-full","flex","justify-center","items-center")
+        li.classList.add("text-lg","m-2","w-32","text-gray-600", "text-center","p-2","flex","justify-center","items-center", "border", "border-gray-600", "rounded")
         li.innerHTML = elem;
 
         $('#linguagens').appendChild(li)
@@ -74,7 +74,7 @@ function projectsItems() {
 
 		// ---------------------- descricão e direcionamento --------------------
 		const descricao = document.createElement('div');
-		descricao.classList.add("p-2","flex","flex-col");
+		descricao.classList.add("p-2","flex","flex-col", 'relative');
 
 		// descricao
 		const p = document.createElement('p');
@@ -82,8 +82,8 @@ function projectsItems() {
 		p.innerHTML = elem.description;
 
 		const botao = document.createElement('a');
-		botao.classList.add("mt-10","p-3","border","hover:border-gray-500","text-white","hover:text-gray-500","bg-gray-500","hover:bg-white","w-full","text-center","rounded-full","transition","duration-500");
-		botao.innerHTML = "Visualizar"
+		botao.classList.add("btn-link");
+		botao.innerHTML = `<i class="fas fa-search"></i>`
 		botao.href = elem.link;
 		botao.target = "__blank";
 
