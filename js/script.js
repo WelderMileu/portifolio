@@ -1,38 +1,106 @@
-function navigation() {
-    const content = document.querySelector('.fixado');
-    const iconMenu = document.querySelector('.icon-nav');
-    
-    const position = window.scrollY;
+const $ = e => document.querySelector(e);
 
-    if(position > 400) {
-        content.classList.remove('absolute')
-        content.classList.add('bg-white', 'fixed', 'shadow-lg')
-        iconMenu.classList.add('text-teal-900')
-    } else {
-        content.classList.add('absolute')
-        content.classList.remove('bg-white', 'fixed', 'shadow-lg')
-        iconMenu.classList.remove('text-teal-900')      
-    }
+const linguagens = ["HTML","CSS","Javascript","Figma","PHP","GitHub","Git","Node JS","MongoDb","SQL","React Native","React JS","SCRUM","Bootstrap","Logica de P."]
+const projetos = [
+	{
+		"image":"https://github.com/WelderMileu/site_balao/raw/master/assets/template.png",
+		"imgW" : "500",
+		"imgh" : "500",
+		"description" : "Banner de site do balão da turquia responsivo.",
+        "link" : "https://weldermileu.github.io/site_balao/index.html"
+	},
+	{
+		"image":"https://github.com/WelderMileu/ecommerce-static/raw/master/assets/template.png",
+		"imgW" : "500",
+		"imgh" : "500",
+		"description" : "E-commerce responsivo feito em html, css e javascript puro.",
+        "link" : "https://weldermileu.github.io/ecommerce-static/index.html"
+	},
+	{
+		"image":"https://github.com/WelderMileu/tela_login_blog/raw/master/template.png",
+		"imgW" : "500",
+		"imgh" : "500",
+		"description" : "Tela de login responsiva, feita para altenticação de usuario apenas estatica.",
+        "link" : "https://weldermileu.github.io/tela_login_blog/."
+	},
+	{
+		"image":"./dist/images/influencer.png",
+		"imgW" : "500",
+		"imgh" : "500",
+		"description" : "Clone e otimização do site influencer studio responsivo.",
+        "link" : "https://weldermileu.github.io/clone-influencer/index.html"
+	},
+	{
+		"image":"https://github.com/WelderMileu/animacao_com_jquery/raw/master/template.png",
+		"imgW" : "500",
+		"imgh" : "500",
+		"description" : "Animação usando a biblioteca jquery e estilizada com tailwindcss, não responsivo.",
+        "link" : "https://weldermileu.github.io/animacao_com_jquery/."
+	},
+	{
+		"image":"./dist/images/mobile_first.png",
+		"imgW" : "115",
+		"imgh" : null,
+		"description" : "Aplicativo de musica de forma statica desenvolvido com React Native.",
+        "link" : "https://github.com/WelderMileu/app_de_musica_react-native/raw/master/assets/video.gif"
+	},	
+]
+
+
+
+function writeLinguagens() {
+    linguagens.map(elem => {
+        const li = document.createElement('li');
+        li.classList.add("text-sm","bg-gray-800","m-2","w-32","text-white", "text-center","p-2","rounded-full","flex","justify-center","items-center")
+        li.innerHTML = elem;
+
+        $('#linguagens').appendChild(li)
+    })
 }
 
-function openDrawer() {
-    const open = document.querySelector('.drawer');    
-    
-    open.classList.remove('hidden')
-    open.classList.add('w-full')
+
+function projectsItems() {
+	projetos.map(elem => {
+		// container
+		const container = document.createElement('div');
+		container.classList.add("sm:w-2/6","m-3","flex","flex-col","justify-center","items-center","mt-10","p-2");
+
+		// imagem
+		const img = new Image();
+		img.width = elem.imgW;
+		img.height = elem.imgh;
+		img.src = elem.image;
+		img.classList.add('mb-3');
+
+		// ---------------------- descricão e direcionamento --------------------
+		const descricao = document.createElement('div');
+		descricao.classList.add("p-2","flex","flex-col");
+
+		// descricao
+		const p = document.createElement('p');
+		p.classList.add("text-gray-600","text-lg","text-left","p-5","h-20");
+		p.innerHTML = elem.description;
+
+		const botao = document.createElement('a');
+		botao.classList.add("mt-10","p-3","border","hover:border-gray-500","text-white","hover:text-gray-500","bg-gray-500","hover:bg-white","w-full","text-center","rounded-full","transition","duration-500");
+		botao.innerHTML = "Visualizar"
+		botao.href = elem.link;
+		botao.target = "__blank";
+
+		// adicionando elementos a descricao
+		descricao.append(p);
+		descricao.append(botao);
+
+		// -----------------------------------------------------------------------
+
+		// adicionando os elementos ao container
+		container.appendChild(img);
+		container.appendChild(descricao);
+
+
+		$('#projetos').appendChild(container);
+	})
 }
 
-function closeDrawer() {
-    const open = document.querySelector('.drawer');    
-    
-    open.classList.add('hidden')
-    open.classList.remove('w-full')
-}
-
-const buttonOpen = document.querySelector('.fa-bars');
-const buttonClose = document.querySelector('.fa-times-circle');
-
-buttonOpen.addEventListener('click', openDrawer)
-buttonClose.addEventListener('click', closeDrawer)
-
-window.addEventListener('scroll', navigation)
+writeLinguagens()
+projectsItems()
