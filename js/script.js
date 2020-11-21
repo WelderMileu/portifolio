@@ -10,6 +10,13 @@ const projetos = [
         "link" : "https://weldermileu.github.io/site_balao/index.html"
 	},
 	{
+		"image":"https://github.com/WelderMileu/site-casa/raw/main/public/template.png",
+		"imgW" : "500",
+		"imgh" : "500",
+		"description" : "Site desenvolvido com Rect JS usando o Next.",
+        "link" : "https://sitecasa.netlify.app/"
+	},	
+	{
 		"image":"https://github.com/WelderMileu/ecommerce-static/raw/master/assets/template.png",
 		"imgW" : "500",
 		"imgh" : "500",
@@ -43,7 +50,7 @@ const projetos = [
 		"imgh" : null,
 		"description" : "Aplicativo de musica de forma statica desenvolvido com React Native.",
         "link" : "https://github.com/WelderMileu/app_de_musica_react-native/raw/master/assets/video.gif"
-	},	
+	}
 ]
 
 
