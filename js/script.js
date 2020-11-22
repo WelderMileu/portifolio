@@ -10,7 +10,7 @@ const projetos = [
         "link" : "https://weldermileu.github.io/site_balao/index.html"
 	},
 	{
-		"image":"https://github.com/WelderMileu/site-casa/raw/main/public/template.png",
+		"image":"https://github.com/WelderMileu/site-casa/raw/main/public/img/template.png",
 		"imgW" : "500",
 		"imgh" : "500",
 		"description" : "Site desenvolvido com Rect JS usando o Next.",
