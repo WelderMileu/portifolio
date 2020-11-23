@@ -10,11 +10,11 @@ const projetos = [
         "link" : "https://weldermileu.github.io/site_balao/index.html"
 	},
 	{
-		"image":"https://github.com/WelderMileu/site-casa/raw/main/public/img/template.png",
+		"image":"https://github.com/WelderMileu/site-casa/raw/master/public/image/template.png",
 		"imgW" : "500",
 		"imgh" : "500",
 		"description" : "Site desenvolvido com Rect JS usando o Next.",
-        "link" : "https://sitecasa.netlify.app/"
+        "link" : "https://site-casa-23aodn6ig.vercel.app"
 	},	
 	{
 		"image":"https://github.com/WelderMileu/ecommerce-static/raw/master/assets/template.png",
