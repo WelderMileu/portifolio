@@ -14,7 +14,7 @@ const projetos = [
 		"imgW" : "500",
 		"imgh" : "500",
 		"description" : "Site desenvolvido com Rect JS usando o Next.",
-        "link" : "https://site-casa-23aodn6ig.vercel.app"
+        "link" : "https://site-casa.vercel.app/"
 	},	
 	{
 		"image":"https://github.com/WelderMileu/ecommerce-static/raw/master/assets/template.png",
