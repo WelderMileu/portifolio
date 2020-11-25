@@ -31,11 +31,11 @@ const projetos = [
         "link" : "https://weldermileu.github.io/tela_login_blog/."
 	},
 	{
-		"image":"./dist/images/influencer.png",
+		"image":"https://github.com/WelderMileu/jogo_da_memoria/raw/master/assets/template.png",
 		"imgW" : "500",
 		"imgh" : "500",
-		"description" : "Clone e otimização do site influencer studio responsivo.",
-        "link" : "https://weldermileu.github.io/clone-influencer/index.html"
+		"description" : "Jogo da memoria feito com javascript puro.",
+        "link" : " https://weldermileu.github.io/jogo_da_memoria/index.html"
 	},
 	{
 		"image":"https://github.com/WelderMileu/animacao_com_jquery/raw/master/template.png",
