@@ -15,6 +15,13 @@ const projetos = [
 		"imgh" : "500",
 		"description" : "Site desenvolvido com Rect JS usando o Next.",
         "link" : "https://site-casa.vercel.app/"
+	},
+	{
+		"image":"https://github.com/WelderMileu/tela_animada/raw/master/assets/template.png",
+		"imgW" : "500",
+		"imgh" : "500",
+		"description" : "Tela de login animada responsiva, 	usando javascript puro",
+        "link" : "https://weldermileu.github.io/tela_animada/index.html"
 	},	
 	{
 		"image":"https://github.com/WelderMileu/ecommerce-static/raw/master/assets/template.png",
